@@ -1,8 +1,4 @@
 #include "Discipline.h"
-Discipline::Discipline(std::string n, int lc, int comp = 1)
-    : name(n), labCount(lc), complexity(comp) {
-    labGrades = new int[labCount]();
-}
 
 Discipline::~Discipline() {
     delete[] labGrades;
