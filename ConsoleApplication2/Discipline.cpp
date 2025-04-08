@@ -48,9 +48,15 @@ std::ostream& operator<<(std::ostream& out, const Discipline& obj) {
     out << "Discipline: " << obj.name << "\n"
         << "Lab Count: " << obj.labCount << "\n"
         << "Lab Grades: ";
+    
     for (int i = 0; i < obj.labCount; ++i) {
-        out << obj.labGrades[i] << " ";
+        if (obj.labGrades[i] > 0) {
+            out << obj.labGrades[i] << " ";
+        } else {
+            out << "0";
+        }
     }
+
     out << "\nComplexity: " << obj.complexity << "\n"
         << "Number of laboratory papers handed in: " << obj.getSignedLabs() << "\n";
     return out;
