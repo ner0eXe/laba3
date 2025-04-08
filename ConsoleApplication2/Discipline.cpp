@@ -6,8 +6,7 @@ Discipline::~Discipline() {
 
 int& Discipline::operator[](int index) {
     if (index < 0 || index >= labCount) {
-        std::cerr << "Error: Index out of range!" << std::endl;
-        exit(1);
+        throw std::out_of_range("Index out of range!");
     }
     return labGrades[index];
 }
