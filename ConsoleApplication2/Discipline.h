@@ -5,6 +5,11 @@
 #include <sstream>
 #include <iomanip>
 
+Discipline::Discipline(std::string n, int lc, int comp = 1)
+    : name(n), labCount(lc), complexity(comp) {
+    labGrades = new int[labCount]();
+}
+
 class Discipline {
 private:
     std::string name;
