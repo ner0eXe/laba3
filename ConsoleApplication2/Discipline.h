@@ -36,9 +36,7 @@ public:
         }
     }
 
-    ~Discipline() {
-        delete[] labGrades;
-    }
+    ~Discipline();
 
     int& operator[](int index);
 
