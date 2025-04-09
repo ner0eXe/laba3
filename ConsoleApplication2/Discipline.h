@@ -15,7 +15,7 @@ private:
     static const int DEFAULT_GRADE = -1;
 
 public:
-    Discipline(std::string n, int lc, int comp);
+    Discipline(std::string n, int lc, int comp = 1);
 
     ~Discipline();
 
