@@ -60,7 +60,7 @@ std::ostream& operator<<(std::ostream& out, const Discipline& obj) {
         }
     }
 
-    if (first) { // Если ни одна лабораторная не сдана
+    if (first) {
         out << "No labs have been submitted.";
     }
 
