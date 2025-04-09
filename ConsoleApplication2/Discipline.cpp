@@ -1,6 +1,6 @@
 #include "Discipline.h"
 
-Discipline::Discipline(std::string n, int lc, int comp)
+Discipline::Discipline(std::string n, int lc, int comp = 1)
         : name(n), labCount(lc), complexity(comp) {
 
         if (name.empty()) {
