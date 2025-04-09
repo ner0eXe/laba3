@@ -49,11 +49,11 @@ std::ostream& operator<<(std::ostream& out, const Discipline& obj) {
         << "Lab Count: " << obj.labCount << "\n"
         << "Lab Grades: ";
     
-    bool first = true; // Флаг для управления запятыми
+    bool first = true;
     for (int i = 0; i < obj.labCount; ++i) {
         if (obj.labGrades[i] > 0) {
             if (!first) {
-                out << ", "; // Добавляем запятую перед каждым элементом, кроме первого
+                out << ", ";
             }
             out << "#" << (i + 1) << " - " << obj.labGrades[i];
             first = false;
